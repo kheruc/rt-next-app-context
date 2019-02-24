@@ -1,0 +1,27 @@
+{
+  "name": "rt-next-app-context",
+  "version": "1.0.0",
+  "description": "Next.js custom App &amp; Context example",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kheruc@github.com/kheruc/rt-next-app-context.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kheruc/rt-next-app-context/issues"
+  },
+  "homepage": "https://github.com/kheruc/rt-next-app-context#readme",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
