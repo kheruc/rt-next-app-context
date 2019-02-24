@@ -1,7 +1,11 @@
-const Index = () => (
-  <div className="container">
-    <h1>Hello</h1>
-  </div>
-);
+import Layout from '../components/Layout';
+
+const Index = () => {
+  return (
+    <Layout>
+      <h1>Cool App</h1>
+    </Layout>
+  );
+};
 
 export default Index;
