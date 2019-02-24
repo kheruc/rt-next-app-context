@@ -4,6 +4,10 @@ import UserContext from '../components/UserContext';
 const UserInfo = () => {
   const { user, signOut } = useContext(UserContext);
 
+  if (!user) {
+    return false;
+  }
+
   return (
     <div className="user-info">
       <p>
