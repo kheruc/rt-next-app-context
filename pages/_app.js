@@ -1,5 +1,5 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Router from 'next/router';
 import UserContext from '../components/UserContext';
 
@@ -54,11 +54,9 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
-        <UserContext.Provider value={{ user: this.state.user, signIn: this.signIn, signOut: this.signOut }}>
-          <Component {...pageProps} />
-        </UserContext.Provider>
-      </Container>
+      <UserContext.Provider value={{ user: this.state.user, signIn: this.signIn, signOut: this.signOut }}>
+        <Component {...pageProps} />
+      </UserContext.Provider>
     );
   }
 }
