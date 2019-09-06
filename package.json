@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "now-build": "next build && next export -o dist"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
