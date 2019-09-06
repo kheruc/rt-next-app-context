@@ -8,16 +8,6 @@ export default class MyApp extends App {
     user: null
   };
 
-  static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-
-    return { pageProps };
-  }
-
   componentDidMount = () => {
     const user = localStorage.getItem('coolapp-user');
     if (user) {
