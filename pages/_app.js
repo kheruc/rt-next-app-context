@@ -19,7 +19,7 @@ export default class MyApp extends App {
     }
   };
 
-  signIn = (username, password) => {
+  signIn = (username) => {
     localStorage.setItem('coolapp-user', username);
 
     this.setState(
